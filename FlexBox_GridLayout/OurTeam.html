@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .logo{
+        width: 100%;
+        height: 400px;
+        background: url('https://images.pexels.com/photos/954599/pexels-photo-954599.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500') center;
+         background-size: cover;
+        /*background-position: center;  */
+    }
+    .container{
+        margin: 0 70px;
+        width: 80%;
+        display: flex;  
+        flex-wrap: wrap;
+    }
+    .box{
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        /* width: calc(100%/3); */
+        box-sizing: border-box;
+        flex:auto;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+        transition: all .3s ease;
+    }
+    .box:hover{
+        transform: scale(1.02);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
+    }
+    .avatar > img{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+    } 
+    .box > .name {
+        color: #000;
+        font-weight: bold;
+        line-height: 2rem;
+    }
+    .box > .title{
+        color: rgba(0, 0, 0, .7);
+        font-size: .7rem;
+        line-height: 1rem;
+    }
+    .box > .social{
+        width: 50%;
+        margin-top: .8rem;
+        display: flex;
+        justify-content: space-around;
+        opacity: 0;
+        transition: all .3s ease;
+    }
+    .social > a{
+        color: #000;
+        transition: all .3s ease;
+    }
+    .social > a:hover{
+        transform: rotate(360deg) scale(1.35);
+    }
+    .social > a:nth-child(1):hover{
+        color: #0033ff;
+    }
+    .social > a:nth-child(2):hover{
+        color: #00FFFF;
+    }
+    .social > a:nth-child(3):hover{
+        color: #6600CC;
+    }
+    .box:hover .social{
+        opacity: 1;
+    }
+    .box:hover .avatar img{
+        animation: rubberBand 1s ease;
+    }
+    @media (min-width:480px){
+        .box{
+            width: calc(100%);
+        }
+    }
+    @media(min-width:768px){
+        .box{
+            width: calc(100%/2);
+        }
+    }
+    @media(min-width:992px){
+        .box{
+            width: calc(100%/3);
+        }
+    }
+    @media(min-width:1200px){
+        .box{
+            width: calc(100%/4);
+        }
+    }
+</style>
+<body>
+    <div class="logo"></div>
+    <div class="container">
+        <div class="box">
+            <div class="avatar">
+                <img src="https://images.pexels.com/photos/326012/pexels-photo-326012.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+            </div>
+            <div class="name">Rabit</div>
+            <div class="title">Close-up of Rabbit on Field</div>
+            <div class="social">                
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="avatar">
+                <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+            </div>
+            <div class="name">Cat</div>
+            <div class="title">White and Grey Kitten on Brown and Black Leopard Print Textile</div>
+            <div class="social">                
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="avatar">
+                <img src="https://images.pexels.com/photos/2295744/pexels-photo-2295744.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+            </div>
+            <div class="name">Fox</div>
+            <div class="title">Photo of Fox Sitting On Ground</div>
+            <div class="social">                
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="avatar">
+                <img src="https://images.pexels.com/photos/145962/pexels-photo-145962.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+            </div>
+            <div class="name">Eagle</div>
+            <div class="title">Close Up Photography of Bald Eagle</div>
+            <div class="social">                
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="avatar">
+                <img src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+            </div>
+            <div class="name">Pug</div>
+            <div class="title">Portrait Photo of an Adult Black Pug</div>
+            <div class="social">                
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="avatar">
+                <img src="https://images.pexels.com/photos/1319515/pexels-photo-1319515.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+            </div>
+            <div class="name">Giraffe</div>
+            <div class="title">Photograph of Giraffe</div>
+            <div class="social">                
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="avatar">
+                <img src="https://images.pexels.com/photos/3608263/pexels-photo-3608263.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+            </div>
+            <div class="name">Panda</div>
+            <div class="title">Panda Bear on Green Grass</div>
+            <div class="social">                
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="avatar">
+                <img src="https://images.pexels.com/photos/75973/pexels-photo-75973.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+            </div>
+            <div class="name">Dove</div>
+            <div class="title">White Dove on Brown Surface Under Blue Sky</div>
+            <div class="social">                
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="avatar">
+                <img src="https://images.pexels.com/photos/236599/pexels-photo-236599.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+            </div>
+            <div class="name">Tiger</div>
+            <div class="title">Tiger Sitting on Brown Logs Closeup Photography</div>
+            <div class="social">                
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="avatar">
+                <img src="https://images.pexels.com/photos/50577/hedgehog-animal-baby-cute-50577.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+            </div>
+            <div class="name">Hedgehog</div>
+            <div class="title">Shallow Photo of Hedgehog</div>
+            <div class="social">                
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="avatar">
+                <img src="https://images.pexels.com/photos/635499/pexels-photo-635499.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+            </div>
+            <div class="name">Horse</div>
+            <div class="title">Brown Horse On Grass Field</div>
+            <div class="social">                
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="avatar">
+                <img src="https://images.pexels.com/photos/62289/yemen-chameleon-chamaeleo-calyptratus-chameleon-reptile-62289.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+            </div>
+            <div class="name">Lizard</div>
+            <div class="title">Yellow and Green Coated Lizard</div>
+            <div class="social">                
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="avatar">
+                <img src="https://images.pexels.com/photos/1076758/pexels-photo-1076758.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+            </div>
+            <div class="name">Jellyfish</div>
+            <div class="title">Shallow Focus Photo of Pink and Brown Jellyfish</div>
+            <div class="social">                
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

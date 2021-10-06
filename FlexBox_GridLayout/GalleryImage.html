@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery Image</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background: #222;
+    }
+    .container > div > img{
+        width: 100%;
+    }
+    /* flexbox */
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .container > div{
+        padding: 0 10px;
+        box-sizing: border-box;
+        margin-top: 10px;
+        flex: auto;        
+    }
+    @media (min-width:0px){
+        .container > div {
+            width: calc(100%);
+        }
+    }
+    @media (min-width:480px){
+        .container > div{
+            width: calc(100%/2);
+        }
+    }
+    @media (min-width:768px){
+        .container > div{
+            width: calc(100%/3);
+        }
+    }
+    @media (min-width:992px){
+        .container > div{
+            width: calc(100%/4);
+        }   
+    }
+    @media (min-width:1200px){
+        .container > div{
+            width: calc(100%/6);
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div><img src="https://images.pexels.com/photos/9671541/pexels-photo-9671541.png?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/7125511/pexels-photo-7125511.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/6280396/pexels-photo-6280396.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/6478865/pexels-photo-6478865.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/4772853/pexels-photo-4772853.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/3908304/pexels-photo-3908304.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/4939592/pexels-photo-4939592.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/3694710/pexels-photo-3694710.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/6231825/pexels-photo-6231825.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/7108215/pexels-photo-7108215.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/7123145/pexels-photo-7123145.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/2856508/pexels-photo-2856508.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/3905694/pexels-photo-3905694.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/5478188/pexels-photo-5478188.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/6232011/pexels-photo-6232011.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/7683715/pexels-photo-7683715.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/4310462/pexels-photo-4310462.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/4628217/pexels-photo-4628217.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/8993802/pexels-photo-8993802.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/6231568/pexels-photo-6231568.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/3137064/pexels-photo-3137064.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+        <div><img src="https://images.pexels.com/photos/3854490/pexels-photo-3854490.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+    </div>
+</body>
+</html>

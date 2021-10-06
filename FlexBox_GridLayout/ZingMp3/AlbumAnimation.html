@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Album Animation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css">
+</head>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+    }
+     .album-square{
+        width: 128px;
+        height: 128px;
+        background-color: #ddd;
+        background: url('https://loremflickr.com/320/240/dog') center;
+        background-size: cover;
+        color: #fff;
+        font-size: 40px;
+    }
+    .album-square .overlay{
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    .album-square .overlay i{
+        transition: all 0.3s;
+    }
+    .album-square:hover .overlay{
+        opacity: 1;
+    }
+    .album-square:hover .overlay i{
+        transform: scale(1);
+        
+    }
+</style>
+<body>
+    <div class="album-square">
+        <div class="overlay">
+            <i class="far fa-play-circle"></i>
+        </div>
+    </div>
+    <div class="album-square">
+        <div class="overlay">
+            <i class="far fa-play-circle"></i>
+        </div>
+    </div>
+    <div class="album-square">
+        <div class="overlay">
+            <i class="far fa-play-circle"></i>
+        </div>
+    </div>
+    <div class="album-square">
+        <div class="overlay">
+            <i class="far fa-play-circle"></i>
+        </div>
+    </div>
+</body>
+</html>
